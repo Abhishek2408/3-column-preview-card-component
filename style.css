@@ -16,6 +16,7 @@
 }
 body {
   font-size: 15px;
+  background-color: var(--button);
 }
 h1 {
   font-family: "Big Shoulders Display", cursive;
@@ -35,14 +36,12 @@ a {
   font-weight: 400;
 }
 .container {
-  height: 100%;
   display: block;
-  align-items: center;
   padding: 13% 3%;
 }
 .card {
-  width: 87%;
-  padding: 13%;
+  width: 90%;
+  padding: 13% 13% 10% 10%;
   margin: 0 auto;
 }
 .card-sedan {
@@ -97,16 +96,15 @@ a {
   border-radius: 25px;
 }
 
-@media screen and (min-width: 1218px) {
+@media screen and (min-width: 1100px) {
   .container {
-    height: 100%;
     display: flex;
-    padding: 9% 15% 7%;
+    padding: 8% 20%;
+    margin: 10px auto 0 auto;
   }
   .card {
-    height: 100%;
-    padding: 5% 7%;
-    margin: 0;
+    padding: 5%;
+    margin: 0 auto;
   }
   .card-sedan {
     background-color: var(--first);
