@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600&display=swap");
+
+:root {
+  --first: hsl(31, 77%, 52%);
+  --second: hsl(184, 100%, 22%);
+  --third: hsl(179, 100%, 13%);
+
+  --text: hsla(0, 0%, 100%, 0.75);
+  --button: hsla(0, 0%, 95%);
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-size: 15px;
+}
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  color: var(--text);
+  text-transform: uppercase;
+}
+p {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--text);
+}
+a {
+  text-decoration: none;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+}
+.container {
+  height: 100vh;
+  display: block;
+  align-items: center;
+  padding: 13% 3%;
+}
+.card {
+  width: 87%;
+  padding: 13%;
+  margin: 0 auto;
+}
+.card-sedan {
+  background-color: var(--first);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.card-suvs {
+  background-color: var(--second);
+}
+.card-luxury {
+  background-color: var(--third);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.card-img {
+  margin-bottom: 25px;
+}
+.card-title {
+  margin-bottom: 20px;
+}
+.card-text {
+  margin-bottom: 50px;
+}
+.card-sedan a {
+  color: var(--first);
+}
+.card-sedan a:hover {
+  background-color: var(--first);
+  color: white;
+  border: 2px solid white;
+}
+.card-suvs a {
+  color: var(--second);
+}
+.card-suvs a:hover {
+  background-color: var(--second);
+  color: white;
+  border: 2px solid white;
+}
+.card-luxury a {
+  color: var(--third);
+}
+.card-luxury a:hover {
+  background-color: var(--third);
+  color: white;
+  border: 2px solid white;
+}
+.btn {
+  background-color: white;
+  padding: 13px 35px;
+  border-radius: 25px;
+}
+
+@media screen and (min-width: 1218px) {
+  .container {
+    height: 100vh;
+    display: flex;
+    padding: 9% 20% 7%;
+  }
+  .card {
+    overflow: visible;
+    height: 100%;
+    padding: 5% 6%;
+    margin: 0;
+  }
+  .card-sedan {
+    background-color: var(--first);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+  }
+  .card-suvs {
+    background-color: var(--second);
+  }
+  .card-luxury {
+    background-color: var(--third);
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .card-text {
+    margin-bottom: 100px;
+  }
+}
