@@ -128,7 +128,7 @@ a {
 @media screen and (min-width: 1260px) {
   .container {
     display: flex;
-    padding: 9% 20% 5%;
+    padding: 7% 20% 5%;
     margin: 4% auto 0 auto;
   }
 }
