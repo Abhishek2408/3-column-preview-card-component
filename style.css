@@ -37,11 +37,11 @@ a {
 }
 .container {
   display: block;
-  padding: 13% 3%;
+  padding: 15% 5%;
 }
 .card {
-  width: 90%;
-  padding: 13% 13% 10% 10%;
+  width: 100%;
+  padding: 15%;
   margin: 0 auto;
 }
 .card-sedan {
@@ -99,8 +99,8 @@ a {
 @media screen and (min-width: 1100px) {
   .container {
     display: flex;
-    padding: 10% 15% 0;
-    margin: 10px auto 0 auto;
+    padding: 5% 15% 5%;
+    margin: 8% auto 0 auto;
   }
   .card {
     padding: 5%;
@@ -123,5 +123,12 @@ a {
   }
   .card-text {
     margin-bottom: 100px;
+  }
+}
+@media screen and (min-width: 1260px) {
+  .container {
+    display: flex;
+    padding: 9% 20% 5%;
+    margin: 4% auto 0 auto;
   }
 }
